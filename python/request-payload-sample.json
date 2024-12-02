@@ -1,0 +1,40 @@
+{
+    "eventType": "BookOrderNotification",
+    "eventId": "12345-abcde-67890-fghij",
+    "timestamp": "2024-12-02T10:15:30Z",
+    "source": "SmithsBooksInventorySystem",
+    "orderDetails": {
+      "orderId": "ORD-987654",
+      "customer": {
+        "customerId": "CUST-12345",
+        "name": "John Doe",
+        "email": "johndoe@example.com"
+      },
+      "books": [
+        {
+          "bookId": "BK-001",
+          "title": "The Great Adventure",
+          "author": "Jane Smith",
+          "quantity": 2,
+          "pricePerUnit": 15.99
+        },
+        {
+          "bookId": "BK-002",
+          "title": "Learning Java",
+          "author": "Robert Smith",
+          "quantity": 1,
+          "pricePerUnit": 29.99
+        }
+      ],
+      "totalAmount": 61.97,
+      "orderStatus": "Confirmed",
+      "deliveryDate": "2024-12-05"
+    },
+    "inventoryUpdate": {
+      "bookId": "BK-001",
+      "previousStock": 50,
+      "currentStock": 48,
+      "updateReason": "Order Fulfillment"
+    }
+  }
+  
